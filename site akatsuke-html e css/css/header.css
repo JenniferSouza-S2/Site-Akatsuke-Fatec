@@ -1,0 +1,173 @@
+/* CSS da parte de cima do site */
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-left: 38px; /* Empurra os botões um pouco para a direita */
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar button {
+    border: 2px solid rgb(255, 0, 0);
+    background: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+}
+    
+#navcolor {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #171717;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaço entre os botões e a logo */
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Garante que fique colado no topo */
+    left: 0;
+    right: 0;
+}
+
+#navlogo { /* fiz a logo e o carrinho ter um espaço entre eles */
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+#navlogo img {
+    height: 100%; /* ziz a imagem ocupar toda a altura da div */
+    width: 78px;
+}
+
+#navlogo img:first-child { /* deixei o carrinho do tamanho correto */
+    max-height: 30px;
+    width: auto;
+}
+
+#navlogo img:last-child { /* deixei a logo alguns px para baixo */
+        position: relative; 
+        top: 5px; 
+}
+
+
+
+
+/* CSS do conteúdo central do site */
+
+#main-content {
+    display: flex; /* Organiza os elementos lado a lado */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Centraliza no meio da tela */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 50px; /* Espaço interno */
+    margin-top: -30px;
+}
+
+#left-image {
+    width: 450px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+#text-content {
+    display: flex;
+    flex-direction: column; /* Organiza h1 e p em coluna */
+    align-items: flex-start; /* Alinha os textos à esquerda */
+}
+
+#title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    display: flex; /* Mantém a estrutura */
+    align-items: center;
+    position: relative; /* Permite que o #title-bg seja posicionado dentro dele */
+    top: 1px;
+    left: 180px;
+    z-index: 2; /* Garante que o texto fique na frente */
+}
+
+#title-bg {
+    width: 150px;
+    height: auto;
+    bottom: -100px;
+    position: absolute; /* Coloca a imagem atrás do texto */
+    left: 100%; /* Mantém a posição original ao lado */
+    transform: translateX(-50px); /* Ajuste fino para manter no local certo */
+    z-index: -1; /* Coloca atrás do texto */
+}
+
+#text-content > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 50px; /* Ajuste o valor para descer o parágrafo */
+    margin-left: 110px;
+}
+
+
+
+/* CSS da parte de baixo do site */
+
+#footer {
+    width: 100%;
+    height: 250px; 
+    background-color: #171717;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 250px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white; /* Cor do texto */
+}
+
+#footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.footer-section h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.footer-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+    color: #6c6c6c;
+}
+
+#akatsukiUV {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    color: white;
+    margin: 0;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    position: fixed; /* Fixando o título na tela */
+    bottom: 10px; /* Ajusta a distância do fundo */
+    right: 30px; /* Ajusta a distância do lado direito */
+}
+
+#title-footer {
+    position: absolute;
+    left: 90px;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: auto;
+    z-index: -1;
+}
